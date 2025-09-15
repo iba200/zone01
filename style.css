@@ -1,0 +1,93 @@
+
+header {
+
+  background-color: #e4e4e4;
+  font-size: 1.2rem;
+  height: 70px;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+.navbar ul{
+    display: flex;
+}
+header .navbar{
+    justify-content: space-between;
+
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: 100px;
+    
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    padding: 90px;
+}
+.name{
+    font-size: 80px;
+    color: #3396D3;
+}
+.profile p{
+    width: 650px;
+    color: gray;
+}
+.profile{
+    gap: 1rem;
+}
+.photo{
+    border: 5px solid #3396D3;
+    width: 40   0px;
+    height: 700px;
+    border-radius: 20px;
+
+}
+img{
+    border-radius: 20px;
+    transform: translateX(-50px);
+    margin: 50px auto;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+    
+    
+}
+.buttons button{
+    padding: .5rem 3rem;
+    color: #3396D3;
+    font-weight: bold;
+    border: 1px solid #3396D3;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.buttons button:first-child{
+    color: white;
+    background: #3396D3;
+}
