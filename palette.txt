@@ -1,0 +1,4 @@
+60% :   #A59D84 => Couleur dominante( fond, les element du fond)                                                                                   
+30% :   #C1BAA1 => Couleur secondaire. Employez cette couleur pour les textes et autres éléments importants. 
+10% :   #D7D3BF => Couleur d'accentuation. Utilisez une couleur contrastante et vive pour les boutons et les appels à l'action afin d'attirer l'attention
+1%  :   #ECEBDE                                                                                      
