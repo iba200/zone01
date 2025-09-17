@@ -1,95 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-body{
+
+body {
     box-sizing: content-box;
     margin: 0;
     padding: 0;
     background: #f3f2f2;
     font-family: "JetBrains Mono", monospace;
 }
+
 header {
-  background-color: #e4e4e478;
-  font-size: 1.2rem;
-  height: 70px;
+    background-color: #e4e4e478;
+    font-size: 1.2rem;
+    height: 70px;
 
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 80%;
-  margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
 }
-header .navbar{
+
+header .navbar {
     justify-content: space-between;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+.lien {
     text-decoration: none;
     color: black;
     font-size: 23px;
     font-weight: bold;
     font-family: "JetBrains Mono", monospace;
 }
-a:hover{
-    color: #5465ff;
+
+.lien:hover {
+    color: #5465ffcf;
+    text-shadow: 0 4px 8px 0 rgba(40, 73, 205, 0.318), 0 6px 20px 0 rgba(88, 48, 245, 0.556);
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 100px;
-    
+
 }
-.profile{
+
+.profile {
     display: flex;
     flex-direction: column;
     padding: 90px;
 }
-.name{
+
+.name {
     font-size: 80px;
     color: #5465ff;
     font-family: "JetBrains Mono", monospace;
 }
-.profile p{
+
+.profile p {
     width: 650px;
     color: gray;
 }
-.profile{
+
+.profile {
     gap: 1rem;
 }
-.photo{
+
+.photo {
     border: 5px solid #5465ff;
-    width: 40   0px;
+    width: 400px;
     height: 700px;
     border-radius: 20px;
-
 }
-img{
+
+.photo img {
+    position: absolute;
     border-radius: 20px;
     transform: translateX(-50px);
     margin: 50px auto;
+    transition: left 2s ease;
 }
-.buttons{
+/* img:hover {
+    transform: scale(1.2);
+    transition: left 2s ease;
+} */
+
+.buttons {
     display: flex;
     gap: 3rem;
-    
-    
+
+
 }
-.buttons button{
+
+.buttons button {
     padding: .6rem 4rem;
     color: #5465ff;
     font-weight: bold;
@@ -98,7 +121,7 @@ img{
     border-radius: 5px;
 }
 
-.buttons button:first-child{
+.buttons button:first-child {
     color: white;
     background: #5465ff;
 }
@@ -109,34 +132,37 @@ img{
     justify-content: center;
     flex-direction: column;
 }
+
 .main h1 {
     font-family: "JetBrains Mono", monospace;
     font-weight: bold;
     font-size: 50px;
 }
+
 .main p {
     width: 700px;
 }
-.til{
+
+.til {
     width: 200px;
     border: solid;
     color: #5465ff;
     margin-top: auto;
-    margin-bottom: auto ;
+    margin-bottom: auto;
 }
 
-.row{
-    margin: 20px ;
+.row {
+    margin: 20px;
     margin-top: 5rem;
     display: grid;
-    grid-template-columns: auto  auto;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     width: 50%;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,17 +170,19 @@ img{
     width: 450px;
     height: 500px;
     border-radius: 2%;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 20px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
     transition: .5s ease;
-    opacity: 0.80;  
+    opacity: 0.80;
 }
-.card .card-header  {
+
+.card .card-header {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .card .card-header img {
     margin-left: 75px;
     width: 100px;
@@ -166,28 +194,114 @@ img{
     text-align: center;
     width: 50%;
 }
-.card .card-body p{
+
+.card .card-body p {
     width: 100%;
     height: 200px;
 }
 
-.card:hover{
+.card:hover {
     opacity: 1;
-background: #E4E4E4;
-background: linear-gradient(198deg, rgba(228, 228, 228, 1) 0%, rgba(165, 157, 132, 0.92) 47%, rgba(193, 186, 161, 0.77) 100%);}
+    background: #E4E4E4;
+    background: linear-gradient(198deg, rgba(228, 228, 228, 1) 0%, rgba(165, 157, 132, 0.92) 47%, rgba(193, 186, 161, 0.77) 100%);
+}
 
 #mousemove {
     position: absolute;
     width: 25px;
     height: 25px;
-    transform: translate( -50%, -50%);
+    transform: translate(-50%, -50%);
     border: 2px solid black;
     border-radius: 50%;
     transition: .1s ease;
     z-index: -1;
 }
+
 #mousemove.active {
     width: 50px;
     height: 50px;
     transition: .1s ease;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem;
+}
+
+.contact h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+.contact p {
+    padding: 50px;
+    width: 39rem;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+form input {
+    width: 30rem;
+    height: 2.2rem;
+    border-radius: 9px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+    border: 2px solid #999393bb;
+}
+form select{
+  width: 100%;
+  height: 3.5rem;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+form .btn {
+    width: 100%;
+    height: 3.8rem;
+    background: #5465ff;
+    color: #fff;
+}
+input, select {
+    background: #f3f2f2;
+    font-size: 1.3rem
+}
+.reseau {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 3rem;
+    margin: 30px;
+}
+.reseau .icon {
+    display: flex;
+    gap: 1rem;
+}
+.reseau .icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.reseau .icon div a{
+    text-decoration: none;
+}
+footer{
+    margin: 1rem;
+    padding: 1rem;
+}
+footer div {
+    display: flex;
+    align-items: center;
+}
+footer div img{
+    width: 25px;
+    height: 25px;
 }

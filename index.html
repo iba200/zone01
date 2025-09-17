@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -16,9 +17,9 @@
             <h1>Discovery code</h1>
             <nav>
                 <ul>
-                    <li><a href="#container" style="color: #3396D3;">Accueil</a></li>
-                    <li><a href="#passions">Mes passions</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="lien" href="#container" style="color: #3396D3;">Accueil</a></li>
+                    <li><a class="lien" href="#passions">Mes passions</a></li>
+                    <li><a class="lien" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,6 +49,7 @@
         <div class="til"></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt accusamus officia saepe aliquid. Sunt,
             natus officiis! Optio voluptas illum sequi sit.Sunt, natus officiis! Optio.</p>
+
         <div class="row" id="passions">
             <!-- card basketball -->
             <div class="card" data-aos="fade-right">
@@ -94,7 +96,7 @@
                     <img src="tools.png" alt="">
                 </div>
                 <div class="card-body">
-                    <h2>COURSE A PIED</h2>
+                    <h2>DESSIN</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima quis molestias ab! Aut nam
                         placeat ex fugiat!
@@ -102,24 +104,83 @@
                 </div>
             </div>
         </div>
-        <div id="mousemove"></div>
-        <script>
-            const mousemouve = document.getElementById('mousemove')
-            console.log(mousemouve)
-            window.addEventListener("mousemove", (e) => {
-                mousemouve.style.left = e.pageX + "px"
-                mousemouve.style.top = e.pageY + "px"
-            })
-            window.addEventListener("click", (e) => {
-                mousemouve.classList.toggle("active")
+    </div>
 
-            })
+    <div class="contact" id="contact">
+        <h1>Contacte-moi</h1>
+        <div class="til"></div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam iure molestiae assumenda minima nostrum
+            harum, eius culpa et mollitia deserunt?</p>
 
-        </script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
+        <div class="form">
+            <form action="">
+
+                <input type="text" placeholder="Prenom et Nom" name="prenomnom" required minlength="6" maxlength="60">
+                <input type="email" name="email" placeholder="Email" required maxlength="6" max="60">
+                <input type="tel" name="number" placeholder="Numero telephone" required minlength="9" max="30">
+                <select name="" id="">
+                    <option value="">comment voulez vous être rencontré</option>
+                    <option value="">Whatsapp</option>
+                    <option value="">Twitter</option>
+                    <option value="">facebook</option>
+                    <option value="">linkedin</option>
+                </select>
+                <input type="submit" value="Envoyer" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="reseau">
+        <div class="icon">
+            <img src="phone-call.png" alt="phone">
+            <div>
+                <p>Phone</p>
+                <a href="">+221-764074734</a>
+            </div>
+        </div>
+
+        <div class="icon">
+            <img src="instagram.png" alt="instagram">
+            <div>
+                <p>Instagram </p>
+                <a href="">@Zone01dakar</a>
+            </div>
+        </div>
+
+        <div class="icon">
+            <img src="email.png" alt="email">
+            <div>
+                <p>Email</p>
+                <a href="">zone01dakar@gmail.com</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>Portfolio &copy;2025. Creer pour John </p>
+            <img src="https://cdn-icons-png.flaticon.com/128/9484/9484251.png" alt="">    
+        </div>
+        
+    </footer>
+
+    <div id="mousemove"></div>
+    <script>
+        const mousemouve = document.getElementById('mousemove')
+        console.log(mousemouve)
+        window.addEventListener("mousemove", (e) => {
+            mousemouve.style.left = e.pageX + "px"
+            mousemouve.style.top = e.pageY + "px"
+        })
+        window.addEventListener("click", (e) => {
+            mousemouve.classList.toggle("active")
+
+        })
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
