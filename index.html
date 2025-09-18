@@ -111,14 +111,13 @@
         <div class="til"></div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam iure molestiae assumenda minima nostrum
             harum, eius culpa et mollitia deserunt?</p>
-
-        <div class="form">
-            <form action="">
-
-                <input type="text" placeholder="Prenom et Nom" name="prenomnom" required minlength="6" maxlength="60">
-                <input type="email" name="email" placeholder="Email" required maxlength="6" max="60">
-                <input type="tel" name="number" placeholder="Numero telephone" required minlength="9" max="30">
-                <select name="" id="">
+        <div id="error"></div>
+        <div class="form" id="form">
+            <form action="#">
+                <input type="text" placeholder="Prenom et Nom" name="prenomnom"   id="name"> 
+                <input type="email" name="email" placeholder="Email"  id="email">
+                <input type="tel" name="number" placeholder="Numero telephone"  id="number">
+                <select name="reseau" id="">
                     <option value="">comment voulez vous être rencontré</option>
                     <option value="">Whatsapp</option>
                     <option value="">Twitter</option>
@@ -134,7 +133,7 @@
             <img src="phone-call.png" alt="phone">
             <div>
                 <p>Phone</p>
-                <a href="">+221-764074734</a>
+                <a href="tel:+221764074734">+221-764074734</a>
             </div>
         </div>
 
@@ -142,7 +141,7 @@
             <img src="instagram.png" alt="instagram">
             <div>
                 <p>Instagram </p>
-                <a href="">@Zone01dakar</a>
+                <a href="https:">@Zone01dakar</a>
             </div>
         </div>
 
@@ -150,7 +149,7 @@
             <img src="email.png" alt="email">
             <div>
                 <p>Email</p>
-                <a href="">zone01dakar@gmail.com</a>
+                <a href="mailto:ibrahimathiongane2006@gmail.com">zone01dakar@gmail.com</a>
             </div>
         </div>
     </div>
@@ -163,18 +162,8 @@
     </footer>
 
     <div id="mousemove"></div>
+    <script src="script.js"></script>
     <script>
-        const mousemouve = document.getElementById('mousemove')
-        console.log(mousemouve)
-        window.addEventListener("mousemove", (e) => {
-            mousemouve.style.left = e.pageX + "px"
-            mousemouve.style.top = e.pageY + "px"
-        })
-        window.addEventListener("click", (e) => {
-            mousemouve.classList.toggle("active")
-
-        })
-
 
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

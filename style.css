@@ -94,22 +94,15 @@ li {
 }
 
 .photo img {
-    position: absolute;
     border-radius: 20px;
     transform: translateX(-50px);
     margin: 50px auto;
-    transition: left 2s ease;
+    transition: 2s ease;
 }
-/* img:hover {
-    transform: scale(1.2);
-    transition: left 2s ease;
-} */
 
 .buttons {
     display: flex;
     gap: 3rem;
-
-
 }
 
 .buttons button {
@@ -304,4 +297,8 @@ footer div {
 footer div img{
     width: 25px;
     height: 25px;
+}
+
+@media screen and (max-width:1500px){
+    
 }
